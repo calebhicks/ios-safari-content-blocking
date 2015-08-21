@@ -121,6 +121,7 @@ Primitive, sure. But it can help block anything particularly heinous. Like anyth
 ## Final Tips
 
 * Your rules are compiled into Safari's master rule set when you activate the extension. If you are working in the code, you either need to deactivate and reactivate the extension, or use ```SFContentBlockerManager.reloadContentBlockerWithIdentifier``` to reload it programmatically.
+* As discussed during the presentation, you can use an array of attachments to send multiple JSON files, or build your own JSON file dynamically based on settings, simply serve it up in the ActionRequestHandler class.
 * The documentation says that this works with the new CSS Level 4 selectors. Just be aware of which of those new selectors Safari supports. I shot 3.5 hours tinkering with the .has() selector before realizing it wasn't actually supported in any browser yet.
 * Be aware that this only works in Safari and the new ```SFSafariViewController```.
 * And, because this is Apple, be aware that if the system deems your rules as potentially negatively impacting user experience, they won't load.
